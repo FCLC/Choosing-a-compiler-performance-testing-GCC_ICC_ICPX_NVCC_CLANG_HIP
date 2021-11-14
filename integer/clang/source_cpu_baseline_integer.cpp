@@ -7,7 +7,7 @@
         using namespace std::chrono;
 
 // function to add the elements of two arrays
-void add(int n, float *x, float *y)
+void add(int n, int *x, int *y)
 {
   for (int i = 0; i < n; i++)
       y[i] = x[i] + y[i];
@@ -26,8 +26,8 @@ std::chrono::time_point<std::chrono::system_clock> start,stop;
 
 
 while (count > 0){
-  float *x = new float[N];
-  float *y = new float[N];
+  int *x = new int[N];
+  int *y = new int[N];
 
   // initialize x and y arrays on the host
   for (int i = 0; i < N; i++) {
@@ -39,11 +39,11 @@ while (count > 0){
   add(N, x, y);
 
   // Check for errors (all values should be 3.0f)
-  float maxError = 0.0f;
+ /* int maxError = 0.0f;
   for (int i = 0; i < N; i++)
     maxError = fmax(maxError, fabs(y[i]-3.0f));
 if (count<2){  std::cout << "Max error: " << maxError << std::endl;}
-
+*/
 
   // Free memory
   delete [] x;

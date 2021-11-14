@@ -2,13 +2,13 @@
 echo "Starting compile of baseline, opt and no opt"
 echo ""
 
-g++-9 source_cpu_baseline.cpp -o cpu_baseline -O0 -g -fno-tree-loop-optimize -fno-aggressive-loop-optimizations -fno-early-inlining
+g++ source_cpu_baseline.cpp -o cpu_baseline -O0 -g -fno-tree-loop-optimize -fno-aggressive-loop-optimizations -fno-early-inlining
 echo "Finished CPU with GCC baseline"
 
-g++-9 -O3 -march=native source_cpu_baseline.cpp -o cpu_gcc_opt 
+g++ -O3 -march=native source_cpu_baseline.cpp -o cpu_gcc_opt 
 echo "Finished CPU with safe GCC opt"
 
-g++-9 -Ofast -march=native source_cpu_baseline.cpp -o cpu_gcc_fast_opt 
+g++ -Ofast -march=native source_cpu_baseline.cpp -o cpu_gcc_fast_opt 
 echo "Finished CPU with UNSAFE GCC opt"
 
 echo ""

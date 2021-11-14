@@ -1,0 +1,328 @@
+---
+MainSourceFile:  MainSrcFiles_placehold
+Replacements:
+  - FilePath:        '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+    Offset:          4
+    Length:          0
+    ReplacementText: "#include <CL/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+    Offset:          209
+    Length:          10
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+    Offset:          254
+    Length:          0
+    ReplacementText: ', sycl::nd_item<3> item_ct1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+    Offset:          280
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+    Offset:          293
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+    Offset:          306
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+    Offset:          338
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range().get(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+    Offset:          351
+    Length:          9
+    ReplacementText: 'item_ct1.get_group_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+    Offset:          472
+    Length:          0
+    ReplacementText: "\n      dpct::device_ext &dev_ct1 = dpct::get_current_device();\n      sycl::queue &q_ct1 = dev_ct1.default_queue();"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+    Offset:          738
+    Length:          17
+    ReplacementText: 'x = sycl::malloc_shared<int>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+    Offset:          756
+    Length:          4
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+    Offset:          760
+    Length:          13
+    ReplacementText: N
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+    Offset:          773
+    Length:          0
+    ReplacementText: ', q_ct1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+    Offset:          782
+    Length:          17
+    ReplacementText: 'y = sycl::malloc_shared<int>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+    Offset:          800
+    Length:          4
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+    Offset:          804
+    Length:          13
+    ReplacementText: N
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+    Offset:          817
+    Length:          0
+    ReplacementText: ', q_ct1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+    Offset:          1091
+    Length:          0
+    ReplacementText: "      /*\n      DPCT1049:0: The workgroup size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the workgroup size if needed.\n      */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+    Offset:          1097
+    Length:          38
+    ReplacementText: "q_ct1.parallel_for(\n        sycl::nd_range<3>(sycl::range<3>(1, 1, numBlocks) * sycl::range<3>(1, 1, blockSize), sycl::range<3>(1, 1, blockSize)), \n        [=](sycl::nd_item<3> item_ct1) {\n          add(N, x, y, item_ct1);\n        });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+    Offset:          1135
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+    Offset:          1201
+    Length:          23
+    ReplacementText: 'dev_ct1.queues_wait_and_throw()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+    Offset:          1497
+    Length:          11
+    ReplacementText: 'sycl::free(x, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+    Offset:          1516
+    Length:          11
+    ReplacementText: 'sycl::free(y, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+    Digest:          32b74424e673853566c09b929d6ee16c
+DpctVersion:     2021.4.0
+MainHelperFileName: dpct
+USMLevel:        restricted
+FeatureMap:
+  device.hpp:
+    dev_mgr:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+      FeatureName:     dev_mgr
+      SubFeatureMap:
+        dev_mgr_1:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_2:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_3:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_4:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_check_id:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_current_device:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        dev_mgr_current_device_id:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+    device_ext:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+      FeatureName:     device_ext
+      SubFeatureMap:
+        device_ext_1:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        device_ext_2:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        device_ext_default_queue:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+        device_ext_queues_wait_and_throw:
+          IsCalled:        true
+          CallerSrcFiles:
+            - '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+          FeatureName:     ''
+          SubFeatureMap:   {}
+    exception_handler:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+      FeatureName:     exception_handler
+      SubFeatureMap:   {}
+    get_current_device:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+      FeatureName:     get_current_device
+      SubFeatureMap:   {}
+    get_default_queue:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+      FeatureName:     get_default_queue
+      SubFeatureMap:   {}
+    get_tid:
+      IsCalled:        true
+      CallerSrcFiles:
+        - '/home/felix/Choosing-a-compiler-performance-testing-GCC_ICC_ICPX_NVCC_CLANG_HIP/integer/dpcpp/source_gpu_baseline_integer.cu'
+      FeatureName:     get_tid
+      SubFeatureMap:   {}
+  dpct.hpp:
+    non_local_include_dependency:
+      IsCalled:        true
+      CallerSrcFiles:
+        - ''
+      FeatureName:     ''
+      SubFeatureMap:   {}
+...
