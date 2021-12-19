@@ -15,7 +15,7 @@ Sets a very quick, proof of concept only level to test that everything is workin
 Shows what flags are supported on the host system, and therefore should be explitly passed to the compiler.
 For certain platforms which were heavilly segmented, this ensures that all compilers have the same knowledge of underlying hardware support.
 
-Use the above results to set `CFLAGS`, `OldCflags` and `LegacyCflags` (used for gcc 10>=, gcc 8-9 and gcc7=< respectively due to differing instruction support.)
+Use the above results to set `CFLAGS`, `OldCflags` and `LegacyCflags` (used for gcc>=10, gcc 8-9, and gcc=<7 respectively due to differing instruction support.)
 
 `./quick_benchmark`
 
